@@ -9,7 +9,7 @@ resource "aws_instance" "nginx" {
   tags = {
     Name = "public-nginx"
   }
- user_data = <<EFO
+  user_data = <<EFO
 #!/bin/bash
 sudo apt-get update
 sudo apt install nginx -y
