@@ -13,7 +13,7 @@ resource "aws_instance" "public-nginx" {
 #!/bin/bash
 sudo apt-get update
 sudo apt install nginx -y
-sudo echo "hi welcome to terraform vpc-creation" >/var/www/html/index.html
+sudo echo "hi welcome to moulali" >/var/www/html/index.html
 EFO
 
 }
