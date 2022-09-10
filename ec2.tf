@@ -1,4 +1,4 @@
-resource "aws_instance" "nginx" {
+resource "aws_instance" "public-nginx" {
   ami                         = "ami-052efd3df9dad4825"
   instance_type               = "t2.micro"
   key_name                    = "msykey"
@@ -18,7 +18,7 @@ EFO
 
 }
 
-resource "aws_instance" "nginx1" {
+resource "aws_instance" "private-nginx" {
   ami                         = "ami-052efd3df9dad4825"
   instance_type               = "t2.micro"
   key_name                    = "msykey"
