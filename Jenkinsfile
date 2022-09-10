@@ -7,7 +7,7 @@ pipeline {
     stages { 
         stage('Terraform Initialization') { 
             steps { 
-                sh 'terraform init' 
+                sh 'terraform init -upgrade' 
                 sh 'pwd' 
                 sh 'ls -al' 
                 sh 'printenv' 
